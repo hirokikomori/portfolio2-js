@@ -4,254 +4,750 @@
         <!-- head要素エリア -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Greenlist</title>
+        <title>Komori Hiroki</title>
 
 　<link rel="stylesheet" href="css/normalize.css">
-　<link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" type="text/css"/>
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css" type="text/css"/>
   <link rel="stylesheet" href="css/style.css">
   
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="owlcarousel/carousel.js"></script>
+<script type="text/javascript" src="owlcarousel/owl.carousel.min.js"></script>
 
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://use.typekit.net/veh1nnb.css">
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'die0cyj',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 </head>
 
-<body>
-    <header>
-        <div class="container">
-        <div class="row">
-        <div class="header__box">
-        <div class="header__box__logo">
-            <h1>greenlist</h1>
-        </div>
-        
-          <ul class="header__box__nav">
-                <li><a href="">HOME</a></li>
-                <li><a href="">PRICING</a></li>
-                <li><a href="">SUPPORT</a></li>
-          </ul>
-          </div>
-          </div>
-          </div>
-    </header>
+<body class="top loading pace-done addAnim" cz-shortcut-listen="true">
 
 
-    
-    <section id="topcover">
-        
-        <div class="container">
-        <div class="row">
-        <div class="topcover__box">
-        <div class="topcover__box__left">
-        <h1 class="title">
-           <div class="up">Green</div>
-           <div class="up2">Revolution?</div>
-           <div class="block up3">It's a<div class="pink">team</div></div>
-           <div class="up4">effort.</div>
-        </h1>
-        
-        <div class="up5">
-        <div class="button">
-        <a href="">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="slack" class="svg-inline--fa fa-slack fa-w-14 width" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"></path></svg>
-            Connect to Slack
-        </a>
-        </div>
-        
-        <p class="detail">
-            Free 14days trial, no credit card required.
-        </p>
-        </div>
-        </div>
-        
-        <div class="topcover__box__right">
-            <div class="inner">
-                <div class="background">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 498 580" class="sc-gzVnrw dlvlUV item" height="100%"><path d="M1032.35516,234.04863 C997.470065,272.204592 963.421319,309.383746 932.885244,351.539968 C910.526815,382.402434 888.544744,418.088468 876.23181,454.40245 C873.713467,461.826188 858.659163,496.90288 870.46564,503.010253 C885.320149,510.694472 917.473168,466.482303 924.075688,458.867856 C957.803833,419.953705 990.923302,380.593014 1023.21107,340.474134 C1030.06914,331.952651 1123.95874,229.787888 1112.94215,220.657064 C1109.17393,217.535931 1094.35659,228.750612 1092.13097,230.225126 C1074.63266,241.802621 1059.76422,257.036166 1045.26283,272.079002 C1004.47682,314.379419 967.747108,359.64747 938.186775,410.636822 C926.412822,430.949767 915.052399,452.253474 906.368296,474.101402 C901.912408,485.320734 895.783819,500.321707 895.035751,512.587618 C893.744054,533.84481 914.838665,522.890612 925.083955,515.83434 C961.790436,490.553631 992.735394,451.113865 1020.99938,417.139569 C1055.6661,375.4671 1092.49803,335.585445 1127.12293,293.89437 C1136.97328,282.033136 1146.91191,269.869557 1155.72611,257.208271 C1157.2176,255.0779 1164.50779,245.947075 1162.93731,242.746868 C1156.67397,230.025113 1097.5022,287.870724 1093.58064,291.787257 C1050.75487,334.501654 1015.62351,384.500244 986.012067,437.094352 C962.710421,478.487733 936.476903,524.141855 928.485112,571.67517 C925.897073,587.057562 927.718458,601.867825 946.457349,593.392857 C963.412026,585.727244 976.881911,570.27973 989.171612,556.87421 C1011.57186,532.440068 1032.99636,506.931437 1054.16996,481.43211 C1091.87077,436.029166 1131.0956,391.840255 1170.21355,347.665298 C1183.9204,332.189876 1197.86422,316.92377 1211.56178,301.448348 C1214.64233,297.95975 1227.21082,286.210151 1225.77973,280.312094 C1222.77816,267.897336 1179.21361,300.40642 1175.10156,303.453129 C1122.56018,342.385886 1080.97034,398.39882 1047.16785,453.760548 C1021.14342,496.391219 994.668292,545.729302 983.888667,594.992961 C982.076575,603.286521 968.564873,644.972945 989.626959,639.019071 C1002.53463,635.372323 1015.92553,616.938569 1024.1961,607.561217 C1042.20086,587.131986 1059.43432,565.8934 1076.59344,544.747843 C1118.89418,492.623533 1161.51086,440.871341 1204.83845,389.593598 C1222.21595,369.024822 1239.99768,348.809558 1257.65397,328.482659 C1265.87808,319.016929 1276.9179,309.369792 1283.16265,298.345821 C1293.9051,279.372498 1265.19041,297.099229 1259.96322,300.452935 C1211.5339,331.515414 1172.00241,376.206683 1136.95469,421.353796 C1095.53213,474.724698 1059.49937,534.370426 1036.27207,597.997807 C1032.15072,609.300865 1006.92547,665.885929 1030.72428,671.156038 C1042.23339,673.70504 1057.74304,659.964615 1065.2516,653.378141 C1090.71847,631.051112 1112.23125,603.421414 1133.13071,576.91737 C1176.3979,522.053348 1218.86126,466.552075 1265.96636,414.878958 C1280.36088,399.091888 1294.84832,383.393196 1309.27536,367.634034 C1313.87529,362.610453 1321.04931,356.563549 1321.17941,349.204933 C1317.08594,348.293246 1314.56295,350.102665 1310.73433,351.99116 C1293.72389,360.405659 1277.8193,376.062488 1264.5678,389.254041 C1225.78902,427.861195 1192.8647,469.826706 1162.91872,515.57851 C1135.89996,556.855604 1110.98602,601.914339 1095.07213,648.796449 C1091.61987,658.978504 1075.37609,697.43216 1087.52175,707.590958 C1100.87547,718.768427 1130.01299,688.040853 1137.67024,680.775266 C1174.29773,646.014873 1205.92106,604.942443 1238.40397,566.377152 C1268.36854,530.779495 1300.14985,496.233069 1333.1578,463.416988 C1342.03706,454.588509 1355.59058,445.653046 1360,433.480164 C1347.27818,430.461363 1322.23414,456.342111 1313.71731,463.4542 C1275.35671,495.498138 1241.63321,531.821423 1209.77756,570.261125 C1178.85119,607.565869 1150.78235,649.484865 1130.90509,693.813321 C1124.62317,707.804926 1112.10115,731.178534 1118.095,747.477265 C1133.76727,790.061421 1221.20304,691.515497 1230.72349,680.91481 C1257.51458,651.131484 1284.84,621.845864 1312.21653,592.597456 C1318.29865,586.104012 1340.22496,568.958715 1339.30033,559.153428 C1325.97913,561.027968 1311.58926,576.512693 1301.77144,584.50856 C1271.26789,609.370637 1243.60793,638.563227 1218.89843,669.155908 C1198.20341,694.785477 1178.66069,721.498837 1164.34052,751.324026 C1161.05552,758.170982 1149.93206,776.186103 1156.36731,784.093592 C1172.65291,804.108844 1225.51953,750.863531 1234.82625,741.64898 C1251.47427,725.168842 1268.0433,708.502645 1283.10225,690.520084 C1286.04806,686.998925 1296.94849,677.491332 1295.22468,672.746839 C1287.89732,673.695737 1280.97884,681.393911 1275.85388,686.082587 C1258.10931,702.334803 1243.86813,721.717455 1231.5459,742.272276 C1224.61813,753.803257 1215.08839,768.74376 1213.93608,782.651638 C1213.21589,791.410346 1216.50554,799.708558 1226.43952,794.489615" transform="translate(-864.000000, -218.000000)" opacity="1" fill="none" stroke-dashoffset="0px" stroke-dasharray="6415.64013671875px 6415.64013671875px" class=""></path></svg>
-                </div>
-                
-                <div class="image__flow">
-                    <div class="image__flow__box">
-                    <img src="images/sns1.png"></img>
-                    </div>
-                </div>
-                
-                <div class="image__flow2">
-                    <div class="image__flow2__box delay">
-                    <img src="images/sns2.png"></img>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div>
-          
-        </div>
-        </div>
-    </section>
-    
-    
-    
-    <section id="concept">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-           <div class="sub-title">
-             <h2 class="black">
-                 <div class="up">Challenge your</div>
-                 <div class="up2">team to make small,</div>
-                 <div class="up3">sustainable choices</div>
-                 <div class="up4">at work.</div></h2>
-           <p class="text">
-             Greenlist is a simple internal tool that empowers<br>
-             companies to start a sustainable office lifestyle while<br>
-             driving change in a way that feels natural. With both a fun<br>
-             and inspiring approach, Greenlist turns cutting down on<br>
-             plastic into a friendly in-company competition that<br>
-             celebrates individuals for their efforts.</p>
-        </div>
-        
-        <div class="main-image">
-            <img class="gs" src="images/bike.jpg"></img>
-            <div class="background"></div>
-        </div>
-        </div>
-        
-        <div class="col-md-4">
-            <div class="sub-image">
-                <img class="gs2" src="images/woman.jpg"></img>
-                <div class="background"></div>
-            </div>
-        </div>
-        
-        
-        
-        </div>
-        </div>
-            
-        <div class="about">
-            <div class="container">
-                <div class="row">
-            <div class="col-md-12">
-            <div class="text-center">
-             <h2 class="up"><div>Create a cleaner and</div>
-             <div class="up2">better world, on Slack</div></h2>
-             <p class="text">
-                 Whether it’s choosing reusable food and liquid containers or picking the<br>
-                 vegetarian option for the office lunch, Greenlist allows anyone in your<br>
-                 team to set a positive role model and influence other staff in being<br>
-                 more cautious about plastic pollution and using resources sustainably.
-             </p>
-             
-             </div>  
-            </div>
-            </div>
-             
-             </div>
-        
-        <div class="sub-images up3">
-                 <img src="images/slack.png"></img>
-        </div>
-        </div>
-        
-    <div class="menu">
-            <div class="container">
-            <div class="card">    
-            <div class="inner-text">
-                 <h3>Educate<br>employees</h3>
-                 <p class="text">Thanks to a point system based on the<br>
-                 environmental impact of each action, Greenlist<br>
-                 helps you educate your employees on<br>
-                 sustainability while keeping them engaged.</p>
-            </div>
-                <div class="inner-image">
-                 <img src="images/image1.png"></img>
-                </div>
-            </div>
+<div id="fade" class="fade">
+		<h1 class="loadTitle"><img src="images/logo.svg"></h1>
+</div>
 
-           <div class="card card2">
-                <div class="inner-image">
-                 <img src="images/image2.png"></img>
-                </div>
-        
-            
-            <div class="inner-text float">
-                 <h3>Celeblate<br>achievement</h3>
-                 <p class="text">Thanks to a point system based on the<br>
-                 environmental impact of each action, Greenlist<br>
-                 helps you educate your employees on<br>
-                 sustainability while keeping them engaged.</p>
-            </div>
-            </div>
-            
-            <div class="card card2 card3">    
-                <div class="inner-text">
-                 <h3>Drive<br>engagement</h3>
-                 <p class="text">Thanks to a point system based on the<br>
-                 environmental impact of each action, Greenlist<br>
-                 helps you educate your employees on<br>
-                 sustainability while keeping them engaged.</p>
-            </div>
-                <div class="inner-image">
-                 <img src="images/image1.png"></img>
-                </div>
-            </div>
-            </div>
-        </div>
+<div class="transition"></div>
 
-    </section>
-    
-        
+<div class="humbBtn">
+	<div class="inner">
+		<span></span>
+		<span class="second"></span>
+		<span></span>
+	</div>
+</div>
+<!-- .humbBtn -->
 
-<section id="footer">
-    <div class="container">
-            <div class="row">
-                <div class="col-md-12 footer-box">
-                <h3 class="title">
-           <div>Sign up to</div>
-           <div class="pink">Greenlist</div><div class="inline">today.</div>
-        </h3>
-        
-        <div class="button">
-        <a href="">
-            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="slack" class="svg-inline--fa fa-slack fa-w-14 width" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"></path></svg>
-            Connect to Slack
-        </a>
-        </div>
-        
-        <p class="detail">
-            Free 14days trial, no credit card required.
-        </p>    
-               
-               </div>
-               </div>
-               
-               <div class="copy">
-                   <p>Privacy & Terms</p>
-               </div>
-             
-            </div>
+
+<div class="humbCont">
+
+<div class="humbPC">
+
+<nav class="humbNav">
+	<ul class="one main">
+		<li class="homeBtn">
+			<a href="">Home</a>
+		</li>
+
+		<li class="worksBtn">
+			<a href="">Works</a>
+		</li>
+
+		<li class="skillsBtn">
+			<a href="">Skills</a>
+		</li>
+
+		<li class="contactBtn">
+			<a href="">Contact</a>
+		</li>
+	</ul>
+	<!-- one -->
+
+
+	<ul class="two main">
+		<li class="infoBtn">
+			<a href="">Shop Info</a>
+		</li>
+
+		<li class="brandBtn">
+			<a href="">Brand</a>
+		</li>
+
+		<li class="blogBtn">
+			<a href="">Blog</a>
+		</li>
+	</ul>
+	<!-- two -->
+</nav>
+<!-- humbNav -->
+<div class="humbBg">
+	<figure class="common">
+	</figure>
+</div>
+<!-- humbBg -->
+
+
+<div class="humbCopy">
+	<div class="copyright">
+    	<span class="mark">© 2021 Hiroki Komori</span>
+  	</div>
+</div>
+<!-- humbCopy -->
+
+<nav class="humbSNS">
+	<ul>
+	<li>
+		<a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+	</li>
+
+	<li>
+		<a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+	</li>
+
+	<li>
+		<a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+	</li>
+</ul>
+</nav>
+<!-- humbSNS -->
+
+
+</div>
+<!-- pc -->
+
+</div>
+<!-- humbCnt -->
+
+
+
+<div class="wrapper">
+
+
+
+<header>
+<div class="inner">
+	<h1 class="title">
+		<a href=""><img src="images/logo.svg"></a>
+	</h1>
+	<!-- title -->
+
+	<nav class="headerNav">
+	<ul class="one main">
+		<li class="homeBtn">
+			<a href="" class="current">Home</a>
+		</li>
+
+		<li class="worksBtn">
+			<a href="">Works</a>
+		</li>
+
+		<li class="skillsBtn">
+			<a href="">Skills</a>
+		</li>
+
+		<li class="contactBtn">
+			<a href="">Contact</a>
+		</li>
+	</ul>
+	</nav>
+</div>
+<!-- .inner -->
+
+</header>
+
+
+
+<main>
+
+<section class="mainTitle">
+
+<div class="mainTitle_text">
+	<div class="left title_parent">
+		<span class="title_anim"><span class="title__top">H</span></span>
+		
+		<span class="title_anim"><span class="title__top">I</span></span>
+		
+		<span class="title_anim"><span class="title__top">R</span></span>
+
+		<span class="title_anim"><span class="title__top">O</span></span>
+		
+		<span class="title_anim"><span class="title__top">K</span></span>
+		
+		<span class="title_anim"><span class="title__top">I</span></span>
+
+	</div>
+
+	<div class="right title_parent">
+		<span class="title_anim"><span class="title__top">K</span></span>
+		
+		<span class="title_anim"><span class="title__top">O</span></span>
+		
+		<span class="title_anim"><span class="title__top">M</span></span>
+
+		<span class="title_anim"><span class="title__top">O</span></span>
+
+		<span class="title_anim"><span class="title__top">R</span></span>
+
+		<span class="title_anim"><span class="title__top">I</span></span>
+	</div>
+</div>
+
+
+<!-- mainTitle_text -->
+<div class="mvVisual">
+	<div class="slide">
+		<div class="slideInner one"></div>
+	    <div class="slideInner two"></div>
+	</div>
+
+</div>
+<!-- mainVisual -->
+
+
+<nav class="mainSNS">
+	<ul>
+	<li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+
+	<li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+
+	<li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+</nav>
+<!-- mainSNS -->
+
+
+
+<div class="scroll">
+<span class="withline">SCROLL</span>
+</div>
+<!-- scroll -->
+
+
+</section>
+<!-- maintitle -->
+
+
+
+<section class="band">
+	<div class="banding"></div>
+</section>
+<!-- band -->
+
+
+
+
+
+<section class="about" id="about">
+	<div class="inner flex">
+		<div class="left">
+			<div class="copy">
+				<div class="top copy_parent">
+					<div class="copy_anim"><span class="copy__top">B</span></div>
+
+					<div class="copy_anim"><span class="copy__top">E</span></div>
+
+					<div class="copy_anim"><span class="copy__top">Y</span></div>
+
+					<div class="copy_anim"><span class="copy__top">0</span></div>
+
+					<div class="copy_anim"><span class="copy__top">N</span></div>
+					
+					<div class="copy_anim"><span class="copy__top">D</span></div>
+				</div>
+
+
+
+				<div class="under copy_parent">
+					<div class="copy_anim"><span class="copy__top">A</span></div>
+
+					<div class="copy_anim"><span class="copy__top">L</span></div>
+
+					<div class="copy_anim"><span class="copy__top">L</span></div>
+
+					<div class="copy_anim"><span class="copy__top">T</span></div>
+
+					<div class="copy_anim"><span class="copy__top">H</span></div>
+
+					<div class="copy_anim"><span class="copy__top">I</span></div>
+
+					<div class="copy_anim"><span class="copy__top">N</span></div>
+
+					<div class="copy_anim"><span class="copy__top">G</span></div>
+					
+  	     			<div class="copy_anim"><span class="copy__top">S</span></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="right">
+			<div class="sectCont">
+				<h3 class="title">コミュニケーションの架け橋に</h3>
+
+				<p class="desc">フリーランスのフロントエンドエンジニア、Hiroki Komoriです。設計〜デザイン〜コーディング〜SEO支援と、Web制作を軸とした仕事を通して、一人でも多くのお客様とエンドユーザーを繋ぐ架け橋となることを何よりも第一に考えています。</p>
+
+				<div class="learnMore">
+					<a class="fadeInUp2" href="">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- about -->
+
+
+
+
+<section class="works">
+	<div class="inner">
+		<div class="top">
+			<h2 class="title copy_parent">
+				<div class="copy_anim">
+					<span class="copy__top">W</span>
+				</div>
+				<div class="copy_anim">
+					<span class="copy__top">O</span>
+				</div>
+				<div class="copy_anim">
+					<span class="copy__top">R</span>
+				</div>
+				<div class="copy_anim">
+					<span class="copy__top">K</span>
+				</div>
+				<div class="copy_anim">
+					<span class="copy__top">S</span>
+				</div>
+			</h2>
+		</div>
+		</div>
+
+	<div class="under">
+
+    <div class="owl-carousel owl-theme">
+<!-- group -->
+           <div class="servSlide web" style="width: 100%; display: inline-block;">
+		                        
+				<div class="image slideImage">
+					<div class="imgInner">
+						<figure><a href=""></a></figure>
+					</div>
+				</div>
+
+				<div class="cont">
+					<h3 class="title">
+						<a href="">Best Partners</a>
+					</h3>
+
+					<div class="learnMore">
+						<a class="fadeInUp2" href="">See More</a>
+					</div>
+				</div>
+			</div>
+			
+			
+<!-- group -->
+		 <div class="servSlide uni" style="width: 100%; display: inline-block;">
+				
+				
+				<div class="image slideImage">
+					<div class="imgInner">
+						<figure><a href=""></a></figure>
+					</div>
+				</div>
+
+				<div class="cont">
+					<h3 class="title">
+						<a href="">大学入試サイト</a>
+					</h3>
+
+					<div class="learnMore">
+						<a class="fadeInUp2" href="">See More</a>
+					</div>
+				</div>
+		 </div>
+
+<!-- group -->
+		 <div class="servSlide web" style="width: 100%; display: inline-block;">
+				
+				
+				<div class="image slideImage">
+					<div class="imgInner">
+						<figure><a href=""></a></figure>
+					</div>
+				</div>
+
+				<div class="cont">
+					<h3 class="title">
+						<a href="">Green List</a>
+					</h3>
+
+					<div class="learnMore">
+						<a class="fadeInUp2" href="">See More</a>
+					</div>
+				</div>
+		 </div>
+
+<!-- group -->
+		 <div class="servSlide uni" style="width: 100%; display: inline-block;">
+				
+				
+				<div class="image slideImage">
+					<div class="imgInner">
+						<figure><a href=""></a></figure>
+					</div>
+				</div>
+
+				<div class="cont">
+					<h3 class="title">
+						<a href="">Hamburger</a>
+					</h3>
+
+					<div class="learnMore">
+						<a class="fadeInUp2" href="">See More</a>
+					</div>
+				</div>
+		 </div>
+
+</div>			
+<!-- owlcarousel-->
+</div>
+<!-- under -->
+
+</section>
+<!-- service -->
+
+
+
+
+<section class="skills sect">
+	<div class="inner">
+		<div class="top">
+			<h2 class="title copy_parent">
+			    <div class="copy_anim">
+			        <span class="copy__top">S</span>
+			    </div>
+			    
+			    <div class="copy_anim">
+			        <span class="copy__top">K</span>
+			    </div>
+			    
+			    <div class="copy_anim">
+			        <span class="copy__top">I</span>
+			    </div>
+			 
+			    <div class="copy_anim">
+			        <span class="copy__top">L</span>
+			     </div>
+			        
+			     <div class="copy_anim">
+			         <span class="copy__top">L</span>
+			     </div>
+			     
+			     <div class="copy_anim">
+			         <span class="copy__top">S</span>
+			     </div>
+			 </h2>
+
+
+
+			<div class="learnMore viewAll">
+				<a class="fadeInUp2" href="">See More</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="under inview2">
+		 <div class="skillsList">
+		     
+
+		  <div class="list">
+		   <div class="skillsDetail">
+				<div class="image">
+					<img src="images/html.png"></img>
+				</div>
+
+				<div class="cont">
+					<h4 class="title">HTML&CSS</h4>
+				</div>
+		</div>
+		</div>
+		
+		
+		
+		<div class="list">
+		   <div class="skillsDetail">
+				<div class="image">
+					<img src="images/js.png"></img>
+				</div>
+
+				<div class="cont">
+					<h4 class="title">Javascript</h4>
+				</div>
+		</div>
+		</div>
+		
+		
+		
+		<div class="list">
+		   <div class="skillsDetail">
+				<div class="image fadeInUp fadeInUp">
+					<img src="images/wordpress.png"></img>
+				</div>
+
+				<div class="cont">
+					<h4 class="title">WordPress</h4>
+				</div>
+		</div>
+		</div>
+		
+		<div class="list">
+		   <div class="skillsDetail">
+				<div class="image">
+					<img src="images/sass.png"></img>
+				</div>
+
+				<div class="cont">
+					<h4 class="title">Sass</h4>
+				</div>
+		</div></div>
+		
+		
+		<div class="list">
+		   <div class="skillsDetail">
+				<div class="image">
+					<img src="images/photosho.png"></img>
+				</div>
+
+				<div class="cont">
+					<h4 class="title">Photoshop</h4>
+				</div>
+		</div>
+		</div>
+	
+	
+		<div class="list">
+		   <div class="skillsDetail">
+				<div class="image">
+					<img src="images/php.png"></img>
+				</div>
+
+				<div class="cont">
+					<h4 class="title">PHP</h4>
+				</div>
+		</div>
+		</div>
+
+	</div>
+	</div>
+	<!-- under -->
+</section>
+<!-- skills -->
+
+
+<section class="contact">
+	<div class="inner">
+		<div class="top">
+			<h2 class="title copy_parent">
+			    <div class="copy_anim">
+			        <span class="copy__top">C</span>
+			     </div>
+			     
+			     <div class="copy_anim">
+			        <span class="copy__top">O</span>
+			     </div>
+			     
+			     <div class="copy_anim">
+			        <span class="copy__top">N</span>
+			     </div>
+			     
+			     <div class="copy_anim">
+			        <span class="copy__top">T</span>
+			     </div>
+			     
+			     <div class="copy_anim">
+			        <span class="copy__top">A</span>
+			     </div>
+			     
+			     <div class="copy_anim">
+			        <span class="copy__top">C</span>
+			     </div>
+			     
+			     <div class="copy_anim">
+			        <span class="copy__top">T</span>
+			     </div>
+			</h2>
+			     
+	
+	        <div class="contactRight">
+     		<div class="contactCont">
+				<address class="">
+				〒585-0053<br>
+				大阪府松原市天海 390
+				</address>
+
+				<div class="info">
+					<div class="open">10:00 ~ 18:00</div>
+
+					<div class="tel">
+						<a href="">/ 0721-21-4138</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="learnMore">
+					<a class="" href="">Learn More</a>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="under">
+     <ul class="footSNS">
+        <li>
+          <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </li>
+
+        <li>
+          <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+
+        <li>
+          <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+	</div>
+	<!-- under -->
 </section>
 
+</main>
 
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<footer>
+<div class="inner">
+  
+  <div class="footerTop">
+  <div class="left">
+      <div class="logo">
+        <a href="">
+          <img src="images/logo.svg" alt="HODGE PODGE">
+        </a>
+      </div>
+
+   </div>
+
+  <div class="right">
+    <nav class="footNav">
+        <ul class="navList main">
+          <li>
+            <a href="">About</a>
+          </li>
+
+          <li>
+            <a href="">Works</a>
+          </li>
+
+          <li>
+            <a href="">Skills</a>
+          </li>
+
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+        </nav>
+      </div>
+       <!-- nav right-->
+</div>
+<!-- footTop -->
+
+<div class="footBottom">
+  <div class="copyright">
+    <span class="mark">© 2021</span>
+    <span>Hiroki Komori</span>
+  </div>
+</div>
+<!-- footBottom -->
+
+</div>
+<!-- inner -->
+
+<div class="toTop">
+</div>
+
+</footer>
+
+</div>
+<!-- wrapper -->
+
+
 <script>
-       window.sr = ScrollReveal({ reset: false ,mobile: true,});
-       sr.reveal( '.up', {  origin: 'bottom' , distance: '30%', duration: 800,opacity: 0,});
-       sr.reveal( '.up2', {  origin: 'bottom' , distance: '30%', duration: 800, delay: 300, opacity: 0,});
-       sr.reveal( '.up3', {  origin: 'bottom' , distance: '30%', duration: 800, delay: 600, opacity: 0,});
-       sr.reveal( '.up4', {  origin: 'bottom' , distance: '30%', duration: 800, delay: 900, opacity: 0,});
-       sr.reveal( '.up5', {  origin: 'bottom' , distance: '30%', duration: 800, delay: 1200, opacity: 0,});
+   setTimeout(function(){
+	$('.fade .loadTitle').fadeIn(800);
+	},250);
+	
+	setTimeout(function(){
+	$('.fade .loadTitle').fadeOut(800);
+	},1800);
+	
+	setTimeout(function(){
+	$('.transition').css("transform","translateY(100%)");
+	},2600);
+	
+	setTimeout(function() {
+	    $('.mainTitle').addClass('active');
+	},3400);
+	
+	setTimeout(function(){
+	$('.fade').fadeOut(700);
+	},3900);
+	
+	setTimeout(function(){
+	$('.humbBtn').animate({
+		'top':"0"},200, "swing");
+	},4200);
+	
+	setTimeout(function(){
+	$('header').animate({
+		"top":"20px",
+		"opacity":"1"},300, "swing");
+	},4600);
+	
+</script>
 
+<script>
+//jquery//
 $(function(){
-　
-　
+	let interval = 4000;
+	$(".slide .slideInner:first").addClass("active");
+	
+	let changeSlide = function(){
+		let $active = $(".slide .slideInner.active");
+		let $next = $active.next(".slideInner").length?$active.next(".slideInner"):$(".slideInner:first");
+		
+		$active.removeClass("active").addClass("clip");
+		$next.addClass("active").removeClass("clip");
+	};
+	
+	setInterval(changeSlide,interval);
+}());
+	
+$(function(){
+////背景のスライドいん//////////////////////////////
 　　	$(window).scroll(function (){
-    $('.background').each(function(){
+    $('.band , .owl-carousel').each(function(){
       //ターゲットの位置を取得
       var target = $(this).offset().top;
       //スクロール量を取得
@@ -260,37 +756,78 @@ $(function(){
       var windowHeight = $(window).height();
       //ターゲットまでスクロールするとフェードインする
       if (scroll > target - windowHeight + 0){
-				$(this).addClass('scroll');
+				$(this).addClass('slideIn');
       }
-		});
+	});
+		
+///フェードインアップ///////////////////////////////	
+	$('.copy_parent , .owl-carousel').each(function(){
+		var target = $(this).offset().top;
+		var scroll = $(window).scrollTop();
+		var windowHeight = $(window).height();
+		
+		if(scroll > target - windowHeight + 100){
+			$(this).addClass('active');
+		}
+	});
+	
+	$('h3.title , h4.title , p.desc , .learnMore , .contactCont').each(function(){
+		var target = $(this).offset().top;
+		var scroll = $(window).scrollTop();
+		var windowHeight = $(window).height();
+		
+		if(scroll > target - windowHeight + 50){
+			$(this).addClass('fadeInUp');
+		}
+	});
+	
+		$('.skillsList').each(function(){
+		var target = $(this).offset().top;
+		var scroll = $(window).scrollTop();
+		var windowHeight = $(window).height();
+		
+		if(scroll > target - windowHeight + 200){
+			$(this).addClass('fadeInUp');
+		}
+	});
+	
 	});
 
-　
-　gsap.to(".gs",{
-    scrollTrigger: {
-        trigger: ".main-image",
-        start: "top 45%",
-        end: "top 20%", // 要素を追従させる
-        markers:false,
-    },
-    duration: 1.8,
-    opacity:1,
-});
 
-　gsap.to(".gs2",{
-    scrollTrigger: {
-        trigger: ".sub-image",
-        start: "top 45%",
-        end: "top 20%", // 要素を追従させる
-        markers:false,
-    },
-    duration: 1.8,
-    opacity:1,
-});
-　
-});
 
+///スクロールダウン＆トップへ戻るボタン//////////////////
+	$('.toTop').click(function(){
+	  $('body,html').animate({
+	  	scrollTop:0
+	  },500);
+	  return false;
+	});
+	
+	$('.scroll').click(function(){
+		$('html,body').animate({
+			scrollTop:$('#about').offset().top
+		});
+	});
+///スクロールボタン＆トップへ戻るボタン  end///////////////////////
+
+
+
+///ハンバーガークリックイベント///////////////////////////////////
+	$('.humbBtn').click(function(){
+		if ($(this).hasClass('active')){
+			$(this).removeClass('active');
+			$('.humbCont').removeClass('active');
+		} else{
+			$(this).addClass('active');
+			$('.humbCont').addClass('active');
+		}
+	});
+});
 </script>
+
+
+
+
 
 
 </body>
