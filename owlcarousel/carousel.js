@@ -23,7 +23,7 @@ $(document).ready(function(){
     loop:true,
     nav:false,
     dots:false,
-    items:4,
+    items:3,
     autoplay:true,
     responsive : {
     // breakpoint from 0 up
